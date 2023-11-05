@@ -4,7 +4,7 @@ env:
     IMAGE_NAME: "vote"
     IMAGE_TAG: "latest"
     DOCKERFILE_CONTEXT: "{{defaultContext}}:vote/"
-name: Container build, scan and push
+name: Vote container build, scan and push
 on: [push, pull_request]
 
 jobs:

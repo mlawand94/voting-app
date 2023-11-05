@@ -4,7 +4,7 @@ env:
     IMAGE_NAME: "seed-data"
     IMAGE_TAG: "latest"
     DOCKERFILE_CONTEXT: "{{defaultContext}}:seed-data/"
-name: Container build, scan and push
+name: Seed container build, scan and push
 on: [push, pull_request]
 
 jobs:
