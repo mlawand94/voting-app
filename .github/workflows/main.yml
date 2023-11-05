@@ -3,7 +3,7 @@ env:
     REGISTRY_HOST: "docker.io"
     IMAGE_NAME: "mytestimage"
     IMAGE_TAG: "my-tag"
-    DOCKERFILE_CONTEXT: "docker-stack.yml"
+    DOCKERFILE_CONTEXT: "{{defaultContext}}"
 name: Container build, scan and push
 on: [push, pull_request]
 
