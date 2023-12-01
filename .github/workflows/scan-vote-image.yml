@@ -18,7 +18,7 @@ jobs:
       uses: docker/setup-buildx-action@v2
 
     - name: Build and save
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v5
       with:
         context: ${{ env.DOCKERFILE_CONTEXT }}
         tags: ${{ env.REGISTRY_HOST }}/${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
@@ -62,7 +62,7 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
         
     - name: Push
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v5
       with:
         context: ${{ env.DOCKERFILE_CONTEXT }}
         push: true
